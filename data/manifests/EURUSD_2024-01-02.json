@@ -1,0 +1,24 @@
+{
+  "provider": "Dukascopy Bank SA historical data feed",
+  "provider_page": "https://www.dukascopy.com/swiss/english/marketwatch/historical/",
+  "endpoint_template": "https://datafeed.dukascopy.com/datafeed/{SYMBOL}/{YYYY}/{MM_ZERO_BASED}/{DD}/{HH}h_ticks.bi5",
+  "symbol": "EURUSD",
+  "requested_start_utc": "2024-01-02",
+  "requested_end_utc_exclusive": "2024-01-03",
+  "source_timestamp_precision": "milliseconds",
+  "normalized_timestamp_unit": "nanoseconds",
+  "rows": 101427,
+  "first_tick_utc": "2024-01-02T00:00:01.340000+00:00",
+  "last_tick_utc": "2024-01-02T23:59:45.953000+00:00",
+  "hours_requested": 24,
+  "hours_with_ticks": 24,
+  "compressed_bytes_downloaded": 500068,
+  "normalized_csv": "data/processed/EURUSD_2024-01-02.csv",
+  "normalized_csv_sha256": "8c434576b93c5cc393df768b9ecb87e32c22e029c8c9823302250f6d4766e144",
+  "generated_at_utc": "2026-08-24T02:08:34.010532+00:00",
+  "notes": [
+    "Prices are Dukascopy bid/ask quotes, not reconstructed midpoint data.",
+    "Provider volume fields are preserved but the current engine does not cap fills by size.",
+    "The generated CSV is ignored by Git; rerun this downloader to reproduce it."
+  ]
+}
